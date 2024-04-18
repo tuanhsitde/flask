@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sporter</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- anta font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+    <!--lato font-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <!-- learn more/see details -->
+    <section class="seeDetails">
+    <div class="seeDetails__content container-fluid">
+        <div class="details">
+            <p class="changeDetail">FREE AND EASY RETURN</p>
+            <a href="./returnAndExchange.html">SEE DETAILS</a>
+        </div>
+    </div>
+</section>
+
+    <!-- header -->
+    <header>
+        <div class="header__content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand me-4" href="../index.html">SPORTER</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Áo đội tuyển</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Áo câu lạc bộ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Giày đá bóng</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sản phẩm khác
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../index.html">Phụ kiện Yoga</a></li>
+                                    <li><a class="dropdown-item" href="../index.html">Phụ kiện bóng đá</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search"
+                                   aria-label="Search">
+                            <!-- <div class="form_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div> -->
+                            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                        </form>
+                        <div class="header__icon">
+                            <a href="./checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--detail-->
+    <section class="detail">
+        <div class="row detail__content">
+            <div class="col-3">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-links active" id="home-tab" data-bs-toggle="tab" data-bs-target="#returnAndExchange" role="tab">Returns and Exchanges</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-links" id="profile-tab" data-bs-toggle="tab" data-bs-target="#FaQ" role="tab" >FaQ</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-links" id="contact-tab" data-bs-toggle="tab" data-bs-target="#orderChange" role="tab">Order Changes</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-links" id="privacyPolicy-tab" data-bs-toggle="tab" data-bs-target="#privacyPolicy" role="tab">
+                            Privacy Policy</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-links" id="contactUs-tab" data-bs-toggle="tab" data-bs-target="#contactUs" role="tab">Contact Us</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-links" id="shipping-tab" data-bs-toggle="tab" data-bs-target="#shipping" role="tab">Shipping and Delivery</button>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="returnAndExchange" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <h3 class="detail__title">Returns & Exchanges</h3>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Free Online Returns</h4>
+                            <p>To make your holiday shopping easier, we're extending our return window. Orders placed on puma.com between November 1st, 2023 and December 25th, 2023 may be returned in their original, unused condition as late as February 8th, 2024. Orders placed after December 25th, 2023 will follow our normal return timeframe of 45 days after purchase. To initiate your FREE return, click here.</p>
+                            <p>*Excludes gift cards, bodywear, face masks and customized products.</p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Initiating Your Return</h4>
+                            <p>Looking to make a return online? You’re in the right place. Click here to be redirected to our returns portal to initiate a return online.
+                            </p>
+                            <p>Note: Free online returns are only available for orders placed on us.puma.com.</p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Refunds</h4>
+                            <p>Purchases made by debit or credit card (including pre-paid gift cards) and through PayPal will be credited back to the original form of payment. If you paid with a PUMA Gift Card, you will be issued a separate E-Gift Card for the refunded amount.
+                            </p>
+                            <p>Returns that have been initiated on us.puma.com can take 1-2 weeks to process depending on when the return is received. Please make sure you select the right item(s) you wish to return to avoid delays in refunding.
+                            </p>
+                            <p>
+                                Please note your financial institution’s return processing timelines before reaching out with any concerns regarding your refund.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Return Exceptions</h4>
+                            <p>SPORTER does not accept returns on gift cards, customized products and bodywear including face masks. Custom products are nonrefundable, except in the case of manufacturing or material defects in which case you may contact Customer Service via phone or email for assistance.
+                            </p>
+                            <p>Certain product launches and puma.com exclusives have a shorter window for returns and exchanges. This includes but is not limited to SPORTER x LAMELO BALL and FENTY x PUMA Shoes which must be returned / exchanged within 15 days.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Returns to SPORTER Retail Stores</h4>
+                            <p>You may return items purchased on puma.com to any SPORTER store. Please bring the original form of payment and a physical or digital copy of the Order Confirmation Email with you so you may be refunded. Purchases made by credit card will be credited back to that original card (including pre-paid gift cards). If you paid with a SPORTER Gift Card, Apple Pay, Google Pay or PayPal, then a SPORTER Gift Card will be issued with the refunded amount.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Exchanges</h4>
+                            <p>We do not offer direct exchanges at this time. If you wish to exchange an item, you must go through our return process and place a new order.
+                            </p>
+                            <p>
+                                We will provide you with a pre-paid shipping label for your return and your new order will come with free standard shipping.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="FaQ" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <h3 class="detail__title">Frequently Asked Questions</h3>
+                        <div class="detail-part">
+                            <h4 class="detail-p">How do I check my order status?</h4>
+                            <p>To check the status of your order, including processing and shipping updates, click here. You can check your order status by logging in to your My Account or by entering your order number, email address and billing zip code.
+                            </p>
+                            <p>Please note, once your order has shipped, you will receive an email with a tracking number for all shipping and delivery updates.</p>\
+                            <p>
+                                For more information and step-by-step instructions on how to check your order, click here.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Can I change or cancel my order once it has been placed?</h4>
+                            <p>Unfortunately, no. Once your order has been placed it is sent to our warehouse for processing. You will need to return the original package to obtain a refund.
+                            </p>
+                            <p>Visit our <a href="#returnAndExchange">Returns & Exchanges</a> page for more information.</p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">How do I return or exchange an item?</h4>
+                            <p>We are happy to offer free online returns for orders placed on puma.com within 45 days of purchase. You may return your PUMA products* in their original, unused condition for a full refund.
+                            </p>
+                            <p>To get started with your return and print your pre-paid shipping label, click here and enter your order number and email address. From there, you will see if you qualify for free returns and find step-by-step instructions to initiate.
+                            </p>
+                            <p>
+                                At this time, we do not offer direct exchanges. To exchange an item, you must return the original item and place a new order. Visit our Returns & Exchanges page for more information and assistance.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">What is the 30 Day Test Run?</h4>
+                            <p>Try our running shoes for 30 days and if they’re not a good fit, send them back hassle-free.
+                            </p>
+                            <p>This includes Deviate NITRO™, Velocity NITRO™, Electrify NITRO™, Liberate NITRO™, Magnify NITRO™, Run XX NITRO™ and ForeverRun NITRO™ sneakers.
+                            </p>
+                            <p>
+                                To start your free return and for step-by-step instructions, visit our Returns & Exchanges page.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">What types of payment are accepted?</h4>
+                            <p>We accept payment by debit/credit cards, Apple Pay, PayPal, and PUMA Gift Cards. Visit our Payment Options page for more information.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">How do I used a promotion/coupon code?</h4>
+                            <p>To use your promotion or coupon code, enter the code at checkout in the appropriate field. Make sure you enter the code with the exact spelling and capitalization as shown. You must click "apply" in order for the discount to be applied. The discounted amount will be displayed on the Shopping Bag and Order Summary pages. If the code is invalid, expired or you have not placed the correct products in the shopping bag, the discount will not be applied.
+                            </p>
+                            <p>
+                                Please refer to our Terms and Conditions for more information.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Why is my coupon code not working?</h4>
+                            <p>Our offer codes exclude but are not limited to new product releases, select Classic styles, select Teamsport styles, Golf, Basketball, select RS Product, clearance merchandise and new licensed and replica jerseys. Offers cannot be combined with any other shipping promotion, offer or coupon. Offers cannot be applied to past purchases, redeemed for cash equivalent, used to purchase gift cards, or used as payment on an account.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">How can I redeem a SPORTER Gift Card?</h4>
+                            <p>You can enter your Gift Card information during checkout under the Payment Information section. Click “Add a Gift Card” and enter the unique code as well as the pin number. You may also check your balance at that time. Learn more about PUMA Gift Cards and check your balance on our Gift Card page.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Do you ship to APO/FPO addresses and P.O. boxes?</h4>
+                            <p>Yes, we offer shipping to APO/FPO addresses as well as P.O. boxes. Visit our Shipping & Delivery page for rates and expected delivery times.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">How is sales tax calculated?</h4>
+                            <p>We charge sales and use tax according to federal, state and local government guidelines. Taxes are calculated based on the shipping address provided and the appropriate rules for that tax jurisdiction.
+                            </p>
+                            <p>
+                                Please note that the taxes presented at time of order submission are only an estimate and may not take into account applicable exemptions and tax holidays. Final calculation of applicable taxes will be performed when the order ships and the final amount is charged.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Which browser works best for your site?</h4>
+                            <p>At SPORTER, we're committed to be the world’s fastest sports brand. Our teams make use of the newest technologies to improve your experience. Modern, up-to-date browsers allow you to take full advantage of this, as well as providing improved security and performance. We recommend using the latest versions of Google Chrome or Safari when browsing the PUMA website. Using an alternate browser will result in an inferior experience where some features may not work as intended.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">When will I receive shipping confirmation for my personalized jersey order?</h4>
+                            <p>After placing your order, the jersey will be sent to the screen printer for personalization. Once the personalization has been added, you will receive a shipping confirmation with the details of your shipment.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Can I return a personalized jersey if I change my mind?</h4>
+                            <p>No, personalized jerseys cannot be returned unless they are defective or faulty. If you believe your personalized jersey is defective or faulty, please contact our customer service team here. Common issues can include printing errors, fabric defects, or incorrect personalization details.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Can I make changes to my personalized jersey order after it has been placed?</h4>
+                            <p>Unfortunately, once an order for a personalized jersey has been placed, it cannot be modified or canceled. This is due to the custom nature of the item and the immediate processing required for personalization. Please double-check all details before completing your purchase to ensure accuracy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="orderChange" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <h3 class="detail__title">Your Order</h3>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Congratulations! Your goods are on the way. Now what?</h4>
+                            <p>Keep an eye out for your Order Confirmation email. This will be sent to your inbox as soon as you place your order. Once your order is processed, you will receive an email that our warehouse has received your order and it is ready to be shipped.</p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Track my Order</h4>
+                            <p>Looking for an update on your order? See below for options.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Order Changes and Cancellation</h4>
+                            <p>Unfortunately, once your order is submitted, we are not able to make any changes or cancel your order.
+                            </p>
+                            <p>We understand mistakes happen, so we offer free returns and exchanges on all orders. Check out our Return Policy here.
+                            </p>
+                            <p>
+                                Occasionally we have to cancel products or orders due to processing errors. If this happens, we will notify you by email immediately and you will not be charged.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Shipping and Delivery</h4>
+                            <p>Visit our <a href="#">Shipping & Delivery</a> page for all delivery questions relating to your order.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="privacyPolicy" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <h3 class="detail__title">Privacy Policy</h3>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Privacy Policy</h4>
+                            <p>Effective July, 2023
+                            </p>
+                            <p>
+                                SPORTER, and the SPORTER group of companies (collectively, “PUMA” or "we", "us", or "our") respects the privacy of all of our visitors and pledges to provide you with the best online experience possible. This SPORTER Privacy Policy (“Privacy Policy”) describes what Personal Information (defined below) we collect from you via our Services (defined below), how we may use it and the steps we take to ensure that it is protected. This Privacy Policy applies to Personal Information we may collect from you through any SPORTER online services that posts this Privacy Policy, including our mobile app(s) for users located in the U.S. and Canada, as well as offline collection through our retail stores located in the U.S. and Canada, SPORTER sponsored events, SPORTER emails originated from the U.S. and Canada, and official SPORTER operated surveys and sweepstakes entry forms, or in any other instance when you contact our operations in the U.S. and Canada (collectively “Services”). This Privacy Policy does not apply to our job applicants or current or former employees or contractors except to the extent that they use our website and with regard to our biometric retention statement and with regard to how to make a privacy rights request.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">BY ACCESSING OR USING THE SERVICES, ON ANY COMPUTER, MOBILE PHONE, TABLET, CONSOLE OR OTHER PHYSICAL OR ELECTRONIC DEVICE (COLLECTIVELY, "DEVICE"), OR BY OTHER METHOD, YOU CONSENT TO OUR PRIVACY POLICY.</h4>
+                            <p>SPORTER may modify this Privacy Policy at any time effective upon its posting, and additional privacy notices or policies may also apply. Your continued use of our products and services constitutes your acceptance to this Privacy Policy, applicable additional notices and policies and any updates. By using our Services, you agree to the Service’s Terms & Conditions governing the use of the Services and accept our practices as outlined in this Privacy Policy. Do not use the Service if you do not ACCEPT this Privacy Policy and AGREE TO the Terms and Conditions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contactUs" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <h3 class="detail__title">Questions, Concerns, Comments? You talk, we listen.</h3>
+                        <div class="detail-part">
+                            <h4 class="detail-p">If you have any additional questions or comments, we would love to hear from you!</h4>
+                            <h5>Submit your query using any of the methods below.</h5>
+                            <p><span>Email:</span> <a href="mailto:nguyentuananhtttc@gmail.com">nguyentuananhtttc@gmail.com</a></p>
+                            <p><span>Toll-free number:</span> <a href="#">0374812873</a></p>
+                    </div>
+                </div>
+                    <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <h3 class="detail__title">Shipping & Delivery</h3>
+                        <div class="detail-part">
+                            <p>
+                                Our #1 priority is getting your order to you as quick as possible, without sacrificing quality and accuracy. As soon as you place your order, we send it to our warehouse for processing and shipping.
+                            </p>
+                            <p>
+                                During checkout choose your preferred shipping option – we’ll provide an estimated delivery date based on your shipping selection, delivery address, and where the item(s) ship from.
+                            </p>
+                            <p>
+                                Check out our shipping info below, then sit back and enjoy the wait. We promise it is worth it.
+                            </p>
+                        </div>
+                        <div class="detail-part">
+                            <h4 class="detail-p">Shipping Methods and Rates</h4>
+                            <h5>P.O. Boxes:</h5>
+                            <p>Orders under $60 - $8.00
+                            </p>
+                            <p>Excludes Alaska and Hawaii</p>
+                            <h5>Standard:</h5>
+                            <p>Orders under $60 - $8</p>
+                            <h5>Economy – Alaska, Hawaii, APO/FPO addresses and U.S. Territories:</h5>
+                            <p>$15.00 for all orders</p>
+                            <h5>Expedited:</h5>
+                            <p>$20.00 for all orders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--assistance-->
+    <section class="assistance section">
+        <div class="assistance__content">
+            <div class="row">
+                <div class="col-6 assistance__left">
+                    <h2>Need assistance?</h2>
+                </div>
+                <div class="col-6 assistance__right">
+                    <p>Email: <a href="#">nguyentuantttc@gmail.com</a></p>
+                    <p>Phone Number: <a href="#">0374812873</a> <span>7AM – MIDNIGHT ET, 7 DAYS A WEEK</span></p>
+                    <p>Live chat: <a href="#">START CHAT</a> <span>7AM – MIDNIGHT ET, 7 DAYS A WEEK</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer__content">
+            <div class="footer__support">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-9 col-xxl-9">
+                        <div class="row footer__support--left">
+                            <div class="col-sm-12 col-md-4 col-xl-4">
+                                <h5>SUPPORT</h5>
+                                <ul>
+                                    <li><a href="html/returnAndExchange.html">Contact Us</a></li>
+                                    <li><a href="html/returnAndExchange.html">Shipping and Delivery</a></li>
+                                    <li><a href="html/updating.html">Terms & Conditions</a></li>
+                                    <li><a href="html/updating.html">Transparency in Supply Chain</a></li>
+                                    <li><a href="html/updating.html">Store Locator</a></li>
+                                    <li><a href="html/updating.html">Buy a Gift Card</a></li>
+                                    <li><a href="html/updating.html">Service Discount</a></li>
+                                    <li><a href="html/updating.html">Refer a Friend</a></li>
+                                    <li><a href="html/updating.html">Cookie Settings</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-xl-4">
+                                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+                                <ul>
+                                    <li><a href="html/returnAndExchange.html">FAQ</a></li>
+                                    <li><a href="html/updating.html">Return Policy</a></li>
+                                    <li><a href="html/returnAndExchange.html">Privacy Policy</a></li>
+                                    <li><a href="html/updating.html">Do Not Sell or Share My Information</a></li>
+                                    <li><a href="html/updating.html">TUanh NYC Flagship Store</a></li>
+                                    <li><a href="html/updating.html">Gift Card Balance</a></li>
+                                    <li><a href="html/updating.html">Student Discount</a></li>
+                                    <li><a href="html/updating.html">Promotion Exclusions</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-xl-4">
+                                <h5>ABOUT</h5>
+                                <ul>
+                                    <li><a href="html/updating.html">Company</a></li>
+                                    <li><a href="html/updating.html">Corporate News</a></li>
+                                    <li><a href="html/updating.html">Press Center</a></li>
+                                    <li><a href="html/updating.html">#REFORM</a></li>
+                                    <li><a href="html/updating.html">Investors</a></li>
+                                    <li><a href="html/updating.html">Sustainability</a></li>
+                                    <li><a href="html/updating.html">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-xxl-3 stay-update">
+                        <h5>STAY TO UPDATE</h5>
+                        <a href="html/login.html"><p>Sign Up For Email</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <div class="row">
+                    <div class="footer__contact--icon col-lg-12 col-xl-6">
+                        <a href="https://github.com/tuanhsitde" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/NguynTunAn54179" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.pinterest.com/nonoanhne2910/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="https://www.instagram.com/tanh_2910/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100040992888590" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+
+                    <div class="col-xl-6 copyRight">
+                        <div>
+                            <p>Design & Developer by <span><a href="https://github.com/tuanhsitde">Tuanh Nguyen</a></span></p>
+                            <p>COPYRIGHT © 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
