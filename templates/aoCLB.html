@@ -176,150 +176,152 @@
 <section class="mainClb section">
     <div class="mainClb__content">
         <div class="row">
+            {% for product in products %}
             <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="card">
-                    <img src="../static/img/mu/mu1.jpeg" class="card-img-top" alt="...">
+                    <img src="{{product[3]}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Manchester United sân nhà</h5>
+                        <h5 class="card-title">{{product[1]}}</h5>
                         <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="aoMUdo.html" class="buyNowbtn">Buy now</a>
+                            <p class="card-text">{{ product[2]}}</p>
+                            <a href="{{ product[8] }}" class="buyNowbtn">Buy now</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/psg/psg1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Paris Saint Germain sân khách</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./aopsg.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/muxanh/muxanh1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Manchester United sân khách</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./aomuxanh.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/mutrangxanh/mu1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Manchester United sân nhà</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./aomutrangxanh.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/arsenal/ars1.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Arsenal sân nhà 2023 - 2024</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./aoArsdo.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/realtrang/real1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Real Madrid sân nhà 2023 - 2024</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./aorealtrang.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/juventus/juve1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Juventus sân nhà 2023 - 2024</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./aoJuve.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/arsvang/ars1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Arsenal sân khách 2022 - 2023</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./aoarsvang.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/arsvangden/a1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Arsenal sân khách 2022 - 2023</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./arsvangden.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/arsxanh/ar1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Arsenal sân nhà 2022 - 2023</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./arsxanh.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/realtim/real1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Real Madrid sân khách 2022 - 2023</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./aoReal.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
-                    <img src="../static/img/chel/che1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Áo bóng đá chính hãng Chelsea sân khách 2022 - 2023</h5>
-                        <div class="card-flex">
-                            <p class="card-text">1.899.000đ</p>
-                            <a href="./chel.html" class="buyNowbtn">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/psg/psg1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Paris Saint Germain sân khách</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./aopsg.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/muxanh/muxanh1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Manchester United sân khách</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./aomuxanh.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/mutrangxanh/mu1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Manchester United sân nhà</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./aomutrangxanh.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div> #}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/arsenal/ars1.jpeg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Arsenal sân nhà 2023 - 2024</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./aoArsdo.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/realtrang/real1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Real Madrid sân nhà 2023 - 2024</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./aorealtrang.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/juventus/juve1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Juventus sân nhà 2023 - 2024</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./aoJuve.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/arsvang/ars1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Arsenal sân khách 2022 - 2023</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./aoarsvang.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/arsvangden/a1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Arsenal sân khách 2022 - 2023</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./arsvangden.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/arsxanh/ar1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Arsenal sân nhà 2022 - 2023</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./arsxanh.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/realtim/real1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Real Madrid sân khách 2022 - 2023</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./aoReal.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="mainClb__item col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">#}
+{#                <div class="card">#}
+{#                    <img src="../static/img/chel/che1.jpg" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Áo bóng đá chính hãng Chelsea sân khách 2022 - 2023</h5>#}
+{#                        <div class="card-flex">#}
+{#                            <p class="card-text">1.899.000đ</p>#}
+{#                            <a href="./chel.html" class="buyNowbtn">Buy now</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
         </div>
 
     </div>
@@ -375,7 +377,7 @@
                 </div>
                 <div class="col-lg-3 col-xl-3 col-xxl-3 stay-update">
                     <h5>STAY TO UPDATE</h5>
-                    <a href="html/login.html"><p>Sign Up For Email</p></a>
+                    <a href="{{ url_for('changeToLogin') }}"><p>Sign Up For Email</p></a>
                 </div>
             </div>
         </div>

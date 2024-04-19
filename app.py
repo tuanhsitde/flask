@@ -3,9 +3,9 @@ import sqlite3
 app = Flask(__name__)
 sqldbname = 'Sporter.db'
 
-@app.route('/')
-def index():  # put application's code here
-    return render_template('index.html')
+# @app.route('/')
+# def index():  # put application's code here
+#     return render_template('index.html')
 
 # login
 @app.route('/changeToLogin')
@@ -17,35 +17,64 @@ def changeToLogin():
 def seeDetails():
     return render_template('returnAndExchange.html')
 
+@app.route('/ToMu')
+def ToMu():
+    return render_template('aoMUdo.html')
+@app.route('/ToPsg')
+def ToPsg():
+    return render_template('aopsg.html')
+@app.route('/ToMuGreen')
+def ToMuGreen():
+    return render_template('aomuxanh.html')
+@app.route('/ToMuwg')
+def ToMuwg():
+    return render_template('aomutrangxanh.html')
+@app.route('/ToArs')
+def ToArs():
+    return render_template('aoArsdo.html')
+@app.route('/ToReal')
+def ToReal():
+    return render_template('aorealtrang.html')
+@app.route('/ToJuve')
+def ToJuve():
+    return render_template('aoJuve.html')
+@app.route('/ToArsYellow')
+def ToArsYellow():
+    return render_template('aoarsvang.html')
+@app.route('/ToArsby')
+def ToArsby():
+    return render_template('arsvangden.html')
+@app.route('/ToArsBlue')
+def ToArsBlue():
+    return render_template('arsxanh.html')
+@app.route('/ToRealt')
+def ToRealt():
+    return render_template('aoReal.html')
+@app.route('/ToChel')
+def ToChel():
+    return render_template('chel.html')
+
 # chuyển hướng page áo câu lạc bộ
 @app.route('/aoClb')
 def aoClb():
-    return render_template('aoCLB.html')
+    conn = sqlite3.connect('Sporter.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM products WHERE id <= 12')
+    products = cursor.fetchall()
+    conn.close()
+    return render_template('aoCLB.html', products=products)
 
 # lấy thông tin sản phẩm từ database và hiển thị
-@app.route('/products')
+@app.route('/')
 def getDataProducts():
     conn = sqlite3.connect('Sporter.db')
     cursor = conn.cursor()
-
-    if cursor.execute('SELECT * FROM products'):
-        products = cursor.fetchall()
-    else:
-        return 'No products found'
+    cursor.execute('SELECT * FROM products WHERE id <= 4 ')
+    products = cursor.fetchall()
     conn.close()
 
     return render_template('index.html', products=products)
 
-# @app.route('/products', methods = ['GET'])
-# def get_products():
-#     conn = sqlite3.connect(sqldbname1)
-#     cur = conn.cursor()
-#     cur.execute("SELECT * FROM products")
-#     products=cur.fetchall()
-#     product_list = []
-#     for product in products:
-#         product_list.append({'id': product[0], 'title':product[1], 'price':product[2]})
-#     return jsonify(product_list)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug =True)

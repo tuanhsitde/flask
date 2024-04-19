@@ -28,11 +28,11 @@ window.addEventListener('scroll', () => {
 //     searchArea.style.transform = 'translateY(-150%)';
 // })
 
-// const btnCloseSearch = document.getElementById('close-search');
-// btnCloseSearch.addEventListener('click', () => {
-//     const searchArea = document.getElementById('searchArea');
-//     searchArea.style.transform = 'translateY(-150%)';
-// })
+const btnCloseSearch = document.getElementById('close-search');
+btnCloseSearch.addEventListener('click', () => {
+    const searchArea = document.getElementById('searchArea');
+    searchArea.style.transform = 'translateY(-150%)';
+})
 
 //changeColorHeart
 
